@@ -20,7 +20,8 @@ public class Main {
 
         merge(a, b);
 
-        System.out.println(a);
+        System.out.println("A" + a);
+        System.out.println("B" + b);
 
     }
 
@@ -32,13 +33,11 @@ public class Main {
         for (int i = 0; i < a.size(); i++){
 
             int aVal = ((Integer)a.get(i)).intValue();
-            System.out.println(aVal);
             if (index == b.size()){
                 ab.add(aVal);
                 continue;
             }
             int bVal = ((Integer)b.get(index)).intValue();
-            System.out.println(bVal);
 
             if(i == a.size()-1 && aVal < bVal){
                 ab.add(aVal);
@@ -78,7 +77,6 @@ public class Main {
             a.add(ab.get(i));
         }
 
-        System.out.println(ab);
     }
 
 }
