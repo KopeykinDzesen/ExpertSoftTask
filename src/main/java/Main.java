@@ -18,8 +18,13 @@ public class Main {
         b.add(8);
         b.add(8);
 
+        System.out.println("Входные данные:");
+        System.out.println("A" + a);
+        System.out.println("B" + b);
+
         merge(a, b);
 
+        System.out.println("Результат:");
         System.out.println("A" + a);
         System.out.println("B" + b);
 
